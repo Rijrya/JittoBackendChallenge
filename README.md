@@ -2,7 +2,7 @@
 
 ## Overview
 
-This RESTful API is designed to manage a collection of items using Amazon Web Services (AWS). It provides basic operations for retrieving and adding items to a database. The API is secured with an API key and includes rate limiting for usage control.
+This RESTful API is designed to manage a collection of items using Amazon Web Services (AWS). It provides basic operations for retrieving and adding items to a DynamoDB database. Each API endpoint uses a lambda function, as attached in this repository. The API is secured with an API key and includes rate limiting for usage control. Custom access logging is implemented using CloudWatch.
 
 **Base URL**: `https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod`
 
@@ -88,5 +88,5 @@ curl -X GET https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod/items/{i
 
 ### Add a New Item
 ```bash
-curl -X POST https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod/items -H "x-api-key: YOUR_API_KEY" -d '{"name": "example", "description": "this is an example post request."}'
+curl -X POST https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod/items -H "x-api-key: 43AvV6Mvia74DxpB5yAYw1n0VIvIUxsq8Kt4bhdH" -d "{\"name\": \"example\", \"description\": \"this is an example post request.\"}"
 ```
