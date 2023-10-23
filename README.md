@@ -88,5 +88,5 @@ curl -X GET https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod/items/{i
 
 ### Add a New Item
 ```bash
-curl -X POST https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod/items -H "x-api-key: 43AvV6Mvia74DxpB5yAYw1n0VIvIUxsq8Kt4bhdH" -d "{\"name\": \"example\", \"description\": \"this is an example post request.\"}"
+curl -X POST https://dyyhxsryhd.execute-api.us-east-2.amazonaws.com/prod/items -H "x-api-key: YOUR_API_KEY" -d "{\"name\": \"example\", \"description\": \"this is an example post request.\"}"
 ```
