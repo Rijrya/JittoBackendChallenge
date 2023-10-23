@@ -11,7 +11,7 @@ def lambda_handler(event, context):
         name = event['name']
         description = event['description']
 
-    except json.JSONDecodeError:
+    except KeyError:
         return {
             'statusCode': 400,
             'body': json.dumps({'message': 'Invalid request format.'})
